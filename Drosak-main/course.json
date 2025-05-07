@@ -1,0 +1,47 @@
+[
+    {
+      "id": 1,
+      "title": "Python for Beginners",
+      "language": "English",
+      "price": 0,
+      "rating": 4.7,
+      "platform": "Udemy",
+      "category": "Programming",
+      "thumbnail": "https://img-c.udemycdn.com/course/240x135/567828_67d0.jpg",
+      "url": "https://www.udemy.com/course/pythonforbeginners/"
+    },
+    {
+      "id": 2,
+      "title": "أساسيات البرمجة بلغة بايثون",
+      "language": "Arabic",
+      "price": 0,
+      "rating": 4.5,
+      "platform": "Coursera",
+      "category": "Programming",
+      "thumbnail": "https://img-c.udemycdn.com/course/240x135/123456.jpg",
+      "url": "https://www.coursera.org/learn/python-arabic"
+    },
+    {
+      "id": 3,
+      "title": "JavaScript Masterclass",
+      "language": "English",
+      "price": 59.99,
+      "rating": 4.8,
+      "platform": "Udemy",
+      "category": "Web Development",
+      "thumbnail": "https://img-c.udemycdn.com/course/240x135/764164_de03_2.jpg",
+      "url": "https://www.udemy.com/course/javascript-masterclass/"
+    },
+    {
+      "id": 4,
+      "title": "تطوير الواجهات الأمامية",
+      "language": "Arabic",
+      "price": 29.99,
+      "rating": 4.3,
+      "platform": "Udemy",
+      "category": "Web Development",
+      "thumbnail": "https://img-c.udemycdn.com/course/240x135/987654.jpg",
+      "url": "https://www.udemy.com/course/frontend-arabic/"
+    }
+  ]
+  

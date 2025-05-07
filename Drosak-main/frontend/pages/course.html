@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>كورسات تقنية</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body { transition: background 0.3s, color 0.3s; }
+  </style>
+</head>
+<body class="bg-white text-black dark:bg-gray-900 dark:text-white">
+  <div class="p-4 flex justify-between items-center">
+    <h1 class="text-2xl font-bold">📚 كورسات تقنية</h1>
+    <div class="space-x-2 rtl:space-x-reverse">
+      <button id="lang-toggle" class="bg-gray-300 dark:bg-gray-700 px-4 py-2 rounded">🌐 اللغة</button>
+      <button id="theme-toggle" class="bg-gray-300 dark:bg-gray-700 px-4 py-2 rounded">🌓 الثيم</button>
+    </div>
+  </div>
+
+  <div id="courses-container" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 p-4">
+    <!-- الكورسات ستظهر هنا -->
+  </div>
+
+  <script>
+    const courses = [
+      {
+        title: "Crash Course Computer Science",
+        language: "English",
+        platform: "YouTube",
+        rating: 4.8,
+        link: "https://www.youtube.com/playlist?list=PL8dPuuaLjXtOfse2ncvffeelTrqvhrz8H"
+      },
+      {
+        title: "MIT Introduction to Computer Science",
+        language: "English",
+        platform: "YouTube",
+        rating: 4.9,
+        link: "https://www.youtube.com/playlist?list=PLUl4u3cNGP63WbdFxL8giv4yhgdMGaZNA"
+      },
+      {
+        title: "مقدمة في البرمجة - بغداد الجديدة",
+        language: "Arabic",
+        platform: "YouTube",
+        rating: 4.7,
+        link: "https://www.youtube.com/playlist?list=PLuXY3ddo_8nz1Kp3wXIPKaFQbEZnxdT2S"
+      },
+      {
+        title: "تعلم بايثون من الصفر",
+        language: "Arabic",
+        platform: "YouTube",
+        rating: 4.6,
+        link: "https://www.youtube.com/playlist?list=PLknwEmKsW8OtLRQPTkBJEDgbM0GcJv8TY"
+      }
+    ];
+
+    const container = document.getElementById('courses-container');
+    courses.forEach(course => {
+      const card = document.createElement('div');
+      card.className = "bg-gray-100 dark:bg-gray-800 rounded-xl p-4 shadow hover:shadow-lg transition";
+      card.innerHTML = `
+        <h2 class="text-lg font-semibold mb-2">${course.title}</h2>
+        <p>🌐 اللغة: ${course.language}</p>
+        <p>📺 المنصة: ${course.platform}</p>
+        <p>⭐ التقييم: ${course.rating}</p>
+        <a href="${course.link}" target="_blank" class="mt-2 inline-block bg-blue-600 text-white px-3 py-1 rounded hover:bg-blue-700">مشاهدة</a>
+      `;
+      container.appendChild(card);
+    });
+
+    // الثيم
+    document.getElementById('theme-toggle').onclick = () => {
+      document.documentElement.classList.toggle('dark');
+    };
+
+    // اللغة
+    document.getElementById('lang-toggle').onclick = () => {
+      const lang = document.documentElement.lang;
+      document.documentElement.lang = lang === 'ar' ? 'en' : 'ar';
+      document.documentElement.dir = lang === 'ar' ? 'ltr' : 'rtl';
+    };
+  </script>
+</body>
+</html>

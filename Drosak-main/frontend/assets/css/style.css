@@ -1,0 +1,124 @@
+:root {
+    --bg: #ffffff;
+    --text: #111;
+    --nav-bg: #f0f0f0;
+    --accent: #0077ff;
+  }
+  
+  body.dark {
+    --bg: #111;
+    --text: #f9f9f9;
+    --nav-bg: #222;
+    --accent: #33aaff;
+  }
+  
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+  }
+  
+  /* Navbar */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--nav-bg);
+    padding: 10px 20px;
+    position: relative;
+  }
+  
+  .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: var(--accent);
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: var(--text);
+    transition: 0.3s;
+  }
+  
+  .nav-links a:hover {
+    color: var(--accent);
+  }
+  
+  .menu-icons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .burger {
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: none;
+  }
+  
+  .btn {
+    background: var(--accent);
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .nav-links {
+      flex-direction: column;
+      background: var(--nav-bg);
+      position: absolute;
+      top: 60px;
+      right: 10px;
+      padding: 10px;
+      display: none;
+    }
+  
+    .nav-links.active {
+      display: flex;
+    }
+  
+    .burger {
+      display: block;
+    }
+  }
+  body.dark {
+    background-color: #121212;
+    color: #ddd;
+  }
+  
+  body.dark header,
+  body.dark .card,
+  body.dark .hero {
+    background-color: #1e1e1e;
+    color: #ddd;
+  }
+  
+  body.dark footer {
+    background-color: #111;
+    color: #aaa;
+  }
+  .card {
+    background-color: #fff; /* خلفية فاتحة */
+    color: #222;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+  }
+  body.dark .card {
+    background-color: #2a2a2a; /* لون غامق */
+    color: #eee;
+  }
+  
