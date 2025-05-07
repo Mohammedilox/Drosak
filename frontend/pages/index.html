@@ -1,0 +1,65 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Drosak - Learn Anywhere</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body class="bg-gray-50 text-gray-900 dark:bg-gray-900 dark:text-white">
+  <!-- Header -->
+  <header class="bg-white dark:bg-gray-800 shadow sticky top-0 z-50">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+      <a href="#" class="text-2xl font-bold text-blue-600">Drosak</a>
+      <button id="nav-toggle" class="text-2xl lg:hidden">☰</button>
+      <nav>
+        <ul id="nav-menu" class="hidden lg:flex space-x-6">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="courses.html">Courses</a></li>
+          <li><a href="dashboard.html">Dashboard</a></li>
+          <li><a href="login.html">Login</a></li>
+        </ul>
+      </nav>
+      <button id="theme-toggle">🌓</button>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="bg-gradient-to-r from-blue-500 to-indigo-800 text-white text-center py-16">
+    <div class="container mx-auto">
+      <h1 class="text-4xl font-bold">Learn new skills from anywhere</h1>
+      <p class="mt-4">Join thousands of learners and boost your career with our courses.</p>
+      <a href="register.html" class="inline-block mt-6 bg-white text-blue-700 font-semibold py-2 px-4 rounded shadow">Get Started</a>
+    </div>
+  </section>
+
+  <!-- Courses -->
+  <section class="container mx-auto px-4 py-12">
+    <h2 class="text-2xl font-semibold mb-6">Popular Courses</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+      <div class="bg-white dark:bg-gray-800 rounded-lg p-6 shadow">
+        <h3 class="text-lg font-bold mb-2">Python for Beginners</h3>
+        <p>Learn Python from scratch and build real projects.</p>
+        <a href="course.html" class="inline-block mt-4 bg-blue-600 text-white py-2 px-4 rounded">View Course</a>
+      </div>
+      <div class="bg-white dark:bg-gray-800 rounded-lg p-6 shadow">
+        <h3 class="text-lg font-bold mb-2">Web Development</h3>
+        <p>HTML, CSS, JS, and backend development in one bundle.</p>
+        <a href="course.html" class="inline-block mt-4 bg-blue-600 text-white py-2 px-4 rounded">View Course</a>
+      </div>
+      <div class="bg-white dark:bg-gray-800 rounded-lg p-6 shadow">
+        <h3 class="text-lg font-bold mb-2">Machine Learning</h3>
+        <p>Explore AI and ML with hands-on practice.</p>
+        <a href="course.html" class="inline-block mt-4 bg-blue-600 text-white py-2 px-4 rounded">View Course</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white text-center py-4">
+    <p>&copy; 2025 Drosak. All rights reserved.</p>
+  </footer>
+
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>
